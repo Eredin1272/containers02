@@ -90,7 +90,7 @@ qemu-system-x86_64 -hda debian.qcow2 -cdrom dvd/debian.iso -boot d -m 2G
 - Имя пользователя: user;
 - Пароль пользователя: password;
 ---
-После успешной установки запускаем без ISO следующей командой:
+После успешной установки запускаем следующей командой:
 
 ```
 qemu-system-x86_64 -hda debian.qcow2 -m 2G -smp 2 -device e1000,netdev=net0 -netdev user,id=net0,hostfwd=tcp::1080-:80,hostfwd=tcp::1022-:22
